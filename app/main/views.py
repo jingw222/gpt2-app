@@ -14,8 +14,9 @@ def index():
         old_text = session.get('text')
         if old_text is not None and old_text != form.text.data:
             flash('New input submitted!')
-            session['text'] = form.text.data
-            session['output'] = interact_model(form.text.data)
+
+        session['text'] = form.text.data
+        session['output'] = interact_model(form.text.data)
 
         line = Line.query.filter_by(text=form.text.data).first()
         if line is None:
