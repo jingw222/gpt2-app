@@ -1,0 +1,8 @@
+regex>=2019.3.12
+requests>=2.21.0
+tqdm>=4.31.1
+flask>=1.0.2
+flask-bootstrap>=3.3.7.1
+flask-migrate>=2.4.0
+flask-sqlalchemy>=2.3.2
+flask-wtf>=0.14.2
