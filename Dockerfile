@@ -1,8 +1,8 @@
 FROM tensorflow/tensorflow:1.12.0-py3
 
-ENV LANG=C.UTF-8
-ENV FLASK_APP=run.py
-ENV FLASK_CONFIG docker
+ENV LANG=C.UTF-8 \
+    FLASK_APP=run.py \
+    FLASK_CONFIG=docker
 
 RUN mkdir /gpt2-app
 WORKDIR /gpt2-app
