@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}GPT2-App{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block page_content %}
+<div class="page-header">
+    <h2>
+        {% if type %}
+        {{ type }}
+        {% else %}
+        Start your story here...
+        {% endif %}
+        &#x1F603
+    </h2>
+</div>
+{{ wtf.quick_form(form) }}
+
+<br>
+
+<div class="page-header">
+    <h2>
+        ...and see how it goes &#x1F609
+    </h2>
+</div>
+<div>
+    <p style="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+        Input:
+    </p>
+    <p style="margin-left:40px;font-size:16px">
+        {{ text }}
+    </p>
+</div>
+<br>
+<div>
+    <p style="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+        Output:
+    </p>
+    <p style="margin-left:40px;font-size:16px">
+        {{ output }}
+    </p>
+</div>
+
+
+{% endblock %}

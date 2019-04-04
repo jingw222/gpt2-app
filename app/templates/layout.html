@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+
+        {% block metas %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        {% endblock metas %}
+
+        {% block title %}{% endblock title %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        {% endblock head %}
+    </head>
+
+    <body>
+        {% block body %}
+        {% block navbar %}
+        {% include "includes/_navbar.html" %}
+        {% endblock navbar %}
+
+        {% block content %}
+        {% block page_content %}{% endblock page_content %}
+        {% endblock content %}
+
+        {% block scripts %}{% endblock scripts%}
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        {% endblock body %}
+    </body>
+</html>
