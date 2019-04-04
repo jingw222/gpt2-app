@@ -20,7 +20,7 @@ for filename in ['checkpoint','encoder.json','hparams.json','model.ckpt.data-000
 
     r = requests.get("https://storage.googleapis.com/gpt-2/" + subdir + "/" + filename, stream=True)
 
-    with open(os.path.join(basedir, subdir, filename), 'wb') as f:
+    with open(os.path.join(subdir, filename), 'wb') as f:
         file_size = int(r.headers["content-length"])
         chunk_size = 1000
         with tqdm(ncols=100, desc="Fetching " + filename, total=file_size, unit_scale=True) as pbar:
