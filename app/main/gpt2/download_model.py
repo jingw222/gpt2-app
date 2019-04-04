@@ -3,7 +3,7 @@ import sys
 import requests
 from tqdm import tqdm
 
-basedir = os.path.abspath(os.path.abspath(__file__))
+basedir = os.path.dirname(os.path.abspath(__file__))
 
 if len(sys.argv) != 2:
     print('You must enter the model name as a parameter, e.g.: download_model.py 117M')
