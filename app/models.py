@@ -9,4 +9,4 @@ class Line(db.Model):
     output = db.Column(db.String(64), unique=False)
 
     def __repr__(self):
-        return f'<Line {self.type!r} {self.id}>'
+        return '<Line %r>' % self.id
