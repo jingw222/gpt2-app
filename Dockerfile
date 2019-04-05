@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-py3
+FROM tensorflow/tensorflow:nightly-py3
 
 ENV LANG=C.UTF-8 \
     FLASK_APP=run.py \
