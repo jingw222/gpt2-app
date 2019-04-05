@@ -39,5 +39,10 @@ def index():
 
 
 @main.route('/page/<type>')
-def user(type):
+def page(type):
     return render_template('page.html', type=type)
+
+
+@main.route('/about')
+def about():
+    return render_template('about.html')
