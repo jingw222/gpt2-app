@@ -7,8 +7,8 @@ ENV LANG=C.UTF-8 \
 RUN mkdir /gpt2-app
 WORKDIR /gpt2-app
 ADD . /gpt2-app
-RUN pip3 install -r requirements.txt
-RUN python3 app/main/gpt2/download_model.py 117M
+RUN pip install -r requirements.txt
+RUN python app/main/gpt2/download_model.py 117M
 
 RUN flask db init && \
     flask db migrate && \
