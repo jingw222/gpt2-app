@@ -9,23 +9,23 @@
 {% endblock %}
 {% block page_content %}
 <div class="page-header">
-    <h2>
+    <h3>
         {% if type %}
         {{ type }}
         {% else %}
         Start your story here...
         {% endif %}
         &#x1F603
-    </h2>
+    </h3>
 </div>
 {{ wtf.quick_form(form) }}
 
 <br>
 
 <div class="page-header">
-    <h2>
+    <h3>
         ...and see how it goes &#x1F609
-    </h2>
+    </h3>
 </div>
 <div>
     <p style="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
