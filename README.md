@@ -8,7 +8,7 @@ Set the controversy aside, let's take a look around and see what the smaller mod
 ### Demo
 ![Demo](demo.png)
 
-This is a snapshoot of the app currently deployed on a [Docker](https://www.docker.com/) container hosted on my personal development Ubuntu server on [DigitalOcean](https://www.digitalocean.com/) with limited resources. You can setup and run one wherever Docker is enabled.
+This is a snapshoot of the app currently deployed on a [Docker](https://www.docker.com/) container hosted on my personal development Ubuntu server on [DigitalOcean](https://www.digitalocean.com/) with limited resources. You can setup and run one wherever Docker is enabled. Also, make sure you do not use the development server in a production environment. 
 
 
 ### Usage
